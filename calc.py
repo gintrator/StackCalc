@@ -26,6 +26,8 @@ class StackCalculator(object):
             self.evaluate_op(command)
         	
     def evaluate_op(self, op):
+        if op not in VALID_OPS:
+            raise StackCalcException("Unknown op: {0}.".format(op))
         if len(self.stack) == 0:
             raise StackCalcException("Empty stack.")
         if op == '=':

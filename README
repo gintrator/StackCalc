@@ -3,8 +3,11 @@ Simple stack calculator.
 'python3 calc.py'
 
 All arithmetic operations pop the first two numbers and push the result.
+
 '+ - * /' : What you'd expect.
 '='       : Pop the top item from the stack.
 'c'       : Clear the stack.
 'p'       : Print the stack.
+
+Supports multi-character input. For instance, '1 1 + =' will return 2, and '1 2 + 3 * =' will return 9.
 
